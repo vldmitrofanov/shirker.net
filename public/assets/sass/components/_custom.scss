@@ -1,0 +1,21 @@
+.content0{
+    display: flex;
+    text-align: left;
+    .left{
+        flex: 0 0 50%;
+        padding-right: 10px;
+    }
+    .right{
+        padding-left: 10px;
+    }
+    li{
+        font-weight: 900; 
+    }
+    ul{
+        margin-bottom: 0;
+    }
+    .company-name{
+        font-style: italic;
+        font-size: 80%;
+    }
+}
