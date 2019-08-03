@@ -6,9 +6,10 @@
 -->
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Vladimir Mitrofanov | Full Stack Developer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Vladimir Mitrofanov full-stack web developer for hire"/>
 		<link rel="stylesheet" href="{{asset('assets/css/main.css')}}" />
 		<noscript><link rel="stylesheet" href="{{asset('assets/css/noscript.css')}}" /></noscript>
 	</head>
@@ -26,6 +27,7 @@
 							<li><a href="#first">Skills</a></li>
 							<li><a href="#second">Experience</a></li>
 							<li><a href="#cta">Contact me</a></li>
+							<li><a href="https://wiki.shirker.net">Wiki</a></li>
 						</ul>
 					</nav>
 
@@ -39,7 +41,7 @@
 										<header class="major">
 											<h1>Full-stack web developer for hire</h1>
 										</header>
-										<p>Hi, I'm Vladimir Mitrofanov aka Shirker, a web-developer from Saint Petersburg, Russia. 
+										<p>Hi, I'm Vladimir Mitrofanov aka Shirker, a web-developer from Saint Petersburg, Russia (currently working in Malaysia). 
 											A strong conceptual thinker who has a keen interest in all things related to the Internet. I do have the ability and experience
 											needed to design and execute complex software projects for a diverse variety of users. I am committed to having an impact
 											on the future of any company that I work for, and possess the enthusiasm and commitment to learn and develop my
