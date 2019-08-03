@@ -1891,6 +1891,9 @@ table.alt tbody tr td {
 .content0 {
   display: flex;
   text-align: left; }
+  @media screen and (max-width: 600px) {
+    .content0 {
+      flex-direction: column; } }
   .content0 .left {
     flex: 0 0 50%;
     padding-right: 26px; }
