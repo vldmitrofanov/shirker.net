@@ -24,7 +24,7 @@
 						<ul>
 							<li><a href="#intro" class="active">About me</a></li>
 							<li><a href="#first">Skills</a></li>
-							<li><a href="#second">Expirience</a></li>
+							<li><a href="#second">Experience</a></li>
 							<li><a href="#cta">Contact me</a></li>
 						</ul>
 					</nav>
@@ -44,9 +44,9 @@
 											on the future of any company that I work for, and possess the enthusiasm and commitment to learn and develop my
 											career within a fast paced and growing business. I have a track record of building fluid and dynamic interfaces that are use friendly, and which positively impact on people’s lives. Right now I am looking for a suitable opportunity that will not only
 											take my career to the next level, but will also allow me to work alongside a very specialised team. </p>
-										<ul class="actions">
+										{{--<ul class="actions">
 											<li><a href="generic.html" class="button">Read the autobiography</a></li>
-										</ul>
+										</ul>--}}
 									</div>
 									<span class="image"><img src="images/vlad.png" alt="" /></span>
 								</div>
@@ -84,7 +84,7 @@
 						<!-- Second Section -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>Work Expirience & Career History</h2>
+									<h2>Work Experience & Career History</h2>
 									<p>Started in 2007 my very first scripting was done on FreeBSD 6<br />
 									Running with PHP4 + MySQL 5.0 + Apache 1.3</p>
 								</header>
@@ -123,12 +123,21 @@
 										<ul>
 											<li>2009 - 2017</li>
 										</ul>
-										<span class="company-name">724Care Inc, Cebu Philippines (IT manager)</span>
+										<span class="company-name">724Care Inc, Cebu Philippines (IT manager, PHP Developer)</span>
 										<p>In 2009 I decided to move over to the Philippines. 
 											Applied as a technician to a call-center in Cebu City, after a while I was promoted to the IT manager position. 
-											It was pretty interesting job and I've learnt a lot from the company owners. 
-											These guys were pretty skilled and expirienced IT experts with strong IT-ingeneering background. 
-											In a few years I became Asterisk (SIP server) expert, database maintainer, in-house developer. 
+											It was interesting job and I've gained much of my knowledge from the company founders  
+											whose were skilled and experienced IT experts with strong IT-ingeneering background. 
+											In a few years I became Asterisk (SIP server) expert, database maintainer (MySQL), Network engeneer. 
+											In 2012 the company had high demand for a PHP developer. So as a part-timer I started to work as PHP coder,
+											developing our own dialer (based on GNUDialer), which we sucessfully used for outbound calls. 
+											The core of the dialer was written in C++, which I had to modify in order to work with the new agent's interface, 
+											which I made in Vanilla PHP and jQuery.
+											Another my project was <a href="https://github.com/vldmitrofanov/yp-downloader" target=_blank>PHP YellowPages parser</a> 
+											(Vanilla PHP and Wordpress plugin). As an outbound callcenter we always were in needs of fresh leads. So my parser has come handy. 
+											It could parse and download a few hundred thousands leads a day. Also a back-end, where operator can filter leads by zip-codes, cities or states, 
+											remove duplicates, create order to download selected areas/businesses.
+											All downloading was going through a proxies whose were downloaded and tested automatically. 
 											Thousands lines of PHP code and Bash scripting I wrote made me think about turning into a web developer eventually.
 										</p>
 									</div>
@@ -136,7 +145,7 @@
 										<ul>
 											<li>2011 - current time</li>
 										</ul>
-										<span class="company-name">Upwork.com (freelancer)</span>
+										<span class="company-name">Upwork.com (part-time freelancer)</span>
 										<p>
 											To earn some extra income I started to work on-line on Freelancer.com and Odesk.com 
 											(currently Upwork.com). Currently I don't maintain my Freelancer.com account. Link to my Upwork profile is included in the footer. 
@@ -147,15 +156,36 @@
 												<li>2017 - current time</li>
 											</ul>
 											<span class="company-name">EmbassyAlliance Travel (web developer)</span>
-											<p>Working full time as full-stack web developer. Completed several projects using PHP7 (Laravel), VueJS, NodeJS, MySQL, Postgres, Mongo, Redis (for the queues). 
-												Each project includes 3-rd parties oAuth (Google+, Facebook), and online payment processing.</p>
+											<p class="sm-bt">
+												Working full time as full-stack web developer. Completed several projects using PHP7 (Laravel), VueJS, NodeJS, MySQL, Postgres, Mongo, Redis (for the queues). 
+												Each project includes 3-rd parties oAuth (Google+, Facebook), and online payment processing.
+											</p>
+											<p class="sm-bt">
+												Three major projects I've done with EmbassyAlliance are: 
+											</p>
+											<p class="sm-bt">
+												<a href="https://www.joyscoot.com">JoyScoot</a> scooter rental in Singapore. Part of this project is Web POS, which allows our operators to work 
+												direcly with the databese of the scooters on their Cash Register
+											</p>
+											<p class="sm-bt">	
+												<a href="https://www.attractionsbox.com">Attractions Box</a> online booking for the attractions tickets. Project is still in startup stage, but fully operating. 
+												Currently we cover Singapore only.
+											</p>
+											<p>	
+												<a href="https://www.embassy.camp">Embassy Camps</a> Summer camps for the children based in Malaysia and Singapore.
+											</p>
 										
+												<h3>Education:</h3>
+												<ul>
+													<li>2004-2006 Saint Petersburg State University <br />(Saint Petersburg, Russia)</li>
+												</ul>
+												<p>Distance Education, attended a course "Computer science and computer technology"</p>
 									</div>
 								</div>
 								<footer class="major">
-									<ul class="actions special">
+									{{--<ul class="actions special">
 										<li><a href="generic.html" class="button">Read More</a></li>
-									</ul>
+									</ul>--}}
 								</footer>
 							</section>
 
@@ -168,8 +198,8 @@
 								</header>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Send email</a></li>
-										<li><a href="generic.html" class="button">WhatsApp me</a></li>
+										<li><a href="mailto:shirker2006@gmail.com" class="button primary">Send email</a></li>
+										<li><a href="https://api.whatsapp.com/send?phone=601127113327&text=Vladimir%20Mitrofanov,%20Full%20Stack%20Web%20Developer" target=_blank class="button">WhatsApp me</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -179,28 +209,31 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
+							<h2>Cookie policy</h2>
+							<p>This website is using cookies, because cookies is the part of communication between framework, 
+								which this website built on, and your web-browser to distinguish you from other users. By continuing to browse the site, you are agreeing to our use of cookies.</p>
+							{{--<dd><ul class="actions">
 								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
+							</ul>--}}
 						</section>
 						<section>
-							<h2>Etiam feugiat</h2>
+							<h2>How to reach me</h2>
 							<dl class="alt">
 								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dd>Kuala Lumpur, Malaysia</dd>
 								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
+								<dd>+60 (11) 2711 3327</dd>
 								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
+								<dd><a href="mailto:shirker2006@gmail.com">shirker2006@gmail.com</a></dd>
 							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							<ul class="icons" style="display:flex">
+								<li><a href="https://stackoverflow.com/users/2437063/shirker" target=_blank class="icon brands fab fa-stack-overflow alt"><span class="label">Stack Overflow</span></a></li>
+								<li><a href="https://www.facebook.com/vladimir.mitrofanov.7" target=_blank class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.upwork.com/o/profiles/users/_~0192e6a122709c6306/" target=_blank class="icon brands alt upwork" style="width:2.65em;height: 2.65em;">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" style="enable-background:new 0 0 56.7 56.7;" version="1.1" viewBox="0 0 56.7 56.7" xml:space="preserve"><path style="fill:white" d="M42.4,17.7c-5.3,0-9.3,3.5-10.9,9c-2.5-3.9-4.5-8.3-5.6-12.1h-5.6v14.7c0,2.9-2.4,5.3-5.3,5.3c-2.9,0-5.3-2.4-5.3-5.3V14.7  H4.3v14.7c0,6.1,4.9,11,10.9,11c6,0,10.9-4.9,10.9-11v-2.5c1.1,2.2,2.5,4.6,4,6.7l-3.5,16.3h5.7L34.7,38c2.2,1.4,4.7,2.2,7.7,2.2  c6.1,0,11.1-5,11.1-11.4C53.5,22.7,48.5,17.7,42.4,17.7z M42.4,34.6c-2.2,0-4.5-1-6.3-2.5l0.6-2.2v-0.1c0.4-2.4,1.7-6.4,5.8-6.4  c3.1,0,5.6,2.5,5.6,5.6C48,32.1,45.3,34.6,42.4,34.6z"/></svg>
+									<span class="label">Upwork</span></a></li>
+								<li><a href="https://github.com/vldmitrofanov/" target=_blank class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								{{--<li><a href="#" target=_blank class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>--}}
 							</ul>
 						</section>
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>

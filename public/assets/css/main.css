@@ -120,9 +120,12 @@ a {
   transition: color 0.2s ease, border-bottom 0.2s ease;
   text-decoration: none;
   border-bottom: dotted 1px;
-  color: inherit; }
+  color: #a91f29; }
   a:hover {
     border-bottom-color: transparent; }
+
+#nav a {
+  color: inherit; }
 
 strong, b {
   font-weight: 400; }
@@ -230,7 +233,7 @@ input, select, textarea {
   color: #ffffff; }
 
 a:hover {
-  color: #ffffff; }
+  color: #a91f29; }
 
 strong, b {
   color: #ffffff; }
@@ -1890,7 +1893,7 @@ table.alt tbody tr td {
   text-align: left; }
   .content0 .left {
     flex: 0 0 50%;
-    padding-right: 10px; }
+    padding-right: 26px; }
   .content0 .right {
     padding-left: 10px; }
   .content0 li {
@@ -1900,6 +1903,10 @@ table.alt tbody tr td {
   .content0 .company-name {
     font-style: italic;
     font-size: 80%; }
+  .content0 p.sm-bt {
+    margin: 0 0 1em 0; }
+  .content0 h3 {
+    font-size: 2em; }
 
 /* Header */
 #header {
@@ -1999,7 +2006,7 @@ table.alt tbody tr td {
   #nav input, #nav select, #nav textarea {
     color: #636363; }
   #nav a:hover {
-    color: #636363; }
+    color: #a91f29; }
   #nav strong, #nav b {
     color: #636363; }
   #nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
@@ -2069,7 +2076,7 @@ table.alt tbody tr td {
   #main input, #main select, #main textarea {
     color: #636363; }
   #main a:hover {
-    color: #636363; }
+    color: #a91f29; }
   #main strong, #main b {
     color: #636363; }
   #main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {

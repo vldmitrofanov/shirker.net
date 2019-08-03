@@ -37,10 +37,16 @@
 		));
 		text-decoration: none;
 		border-bottom: dotted 1px;
-		color: inherit;
+		//color: inherit;
+		color: #a91f29;
 
 		&:hover {
 			border-bottom-color: transparent;
+		}
+	}
+	#nav{
+		a{
+			color: inherit;
 		}
 	}
 
@@ -187,7 +193,8 @@
 
 		a {
 			&:hover {
-				color: _palette($p, fg-bold);
+				//color: _palette($p, fg-bold);
+				color: #a91f29;
 			}
 		}
 

@@ -3,7 +3,7 @@
     text-align: left;
     .left{
         flex: 0 0 50%;
-        padding-right: 10px;
+        padding-right: 26px;
     }
     .right{
         padding-left: 10px;
@@ -17,5 +17,11 @@
     .company-name{
         font-style: italic;
         font-size: 80%;
+    }
+    p.sm-bt{
+        margin: 0 0 1em 0;
+    }
+    h3{
+        font-size: 2em;
     }
 }
