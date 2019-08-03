@@ -39,7 +39,8 @@
 										<header class="major">
 											<h1>Full-stack web developer for hire</h1>
 										</header>
-										<p>Hi, I'm Vladimir. A strong conceptual thinker who has a keen interest in all things related to the Internet. I do have the ability and experience
+										<p>Hi, I'm Vladimir Mitrofanov aka Shirker, a web-developer from Saint Petersburg, Russia. 
+											A strong conceptual thinker who has a keen interest in all things related to the Internet. I do have the ability and experience
 											needed to design and execute complex software projects for a diverse variety of users. I am committed to having an impact
 											on the future of any company that I work for, and possess the enthusiasm and commitment to learn and develop my
 											career within a fast paced and growing business. I have a track record of building fluid and dynamic interfaces that are use friendly, and which positively impact on people’s lives. Right now I am looking for a suitable opportunity that will not only
