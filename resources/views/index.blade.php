@@ -200,7 +200,7 @@
 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="mailto:shirker2006@gmail.com" class="button primary">Send email</a></li>
-										<li><a href="https://api.whatsapp.com/send?phone=601127113327&text=Vladimir%20Mitrofanov,%20Full%20Stack%20Web%20Developer" target=_blank class="button">WhatsApp me</a></li>
+										<li><a href="https://api.whatsapp.com/send?phone=601127113327&text=Hi%20Vladimir,%20" target=_blank class="button">WhatsApp me</a></li>
 									</ul>
 								</footer>
 							</section>
