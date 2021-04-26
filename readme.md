@@ -1,6 +1,6 @@
 # Install
 
-Add to `.env` file
+Add to `.env` file:
 
 ```
 ADMIN_EMAIL="******"
@@ -14,7 +14,7 @@ set database to sqlite:
 DB_CONNECTION=sqlite
 ```
 
-remove the rest of database entries!
+remove all the rest of database entries!
 
 create database:
 
