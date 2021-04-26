@@ -1,0 +1,31 @@
+.content0 {
+    display: grid;
+    text-align: left;
+    grid-gap: 20px;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+    .left {
+        flex: 0 0 50%;
+        padding-right: 26px;
+    }
+    .right {
+        padding-left: 10px;
+    }
+    li {
+        font-weight: 900;
+    }
+    ul {
+        margin-bottom: 0;
+    }
+    .company-name {
+        font-style: italic;
+        font-size: 80%;
+    }
+    p.sm-bt {
+        margin: 0 0 1em 0;
+    }
+    h3 {
+        font-size: 2em;
+    }
+}

@@ -16,7 +16,13 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name',
+        'email',
+        'password',
+        'email_verified_at',
+        'admin',
+        'phone',
+        'address',
     ];
 
     /**
@@ -36,4 +42,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function workExperiences()
+    {
+        return $this->hasMany('App\WorkExperience', 'user_id')->orderBy('present', 'desc')->orderBy('start_date', 'desc');
+    }
 }

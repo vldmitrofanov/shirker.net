@@ -11,5 +11,8 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.js('resources/js/app.js', 'public/assets/js').vue({
+    extractStyles: true,
+    globalStyles: false
+});
+mix.sass('resources/sass/main.scss', 'public/assets/css');

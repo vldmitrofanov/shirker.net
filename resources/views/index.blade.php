@@ -10,24 +10,24 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Vladimir Mitrofanov full-stack web developer for hire"/>
+		<meta name="csrf-token" content="{{ csrf_token() }}">
 		<link rel="stylesheet" href="{{asset('assets/css/main.css')}}" />
 		<noscript><link rel="stylesheet" href="{{asset('assets/css/noscript.css')}}" /></noscript>
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="app">
 
 				
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">About me</a></li>
-							<li><a href="#first">Skills</a></li>
-							<li><a href="#second">Experience</a></li>
-							<li><a href="#cta">Contact me</a></li>
-							<li><a href="https://wiki.shirker.net">Wiki</a></li>
+							<li><a href="#intro" class="active scrollable">About me</a></li>
+							<li><a href="#first" class="scrollable">Skills</a></li>
+							<li><a href="#second" class="scrollable">Experience</a></li>
+							<li><a href="#cta" class="scrollable">Contact me</a></li>
+							<li><a href="https://wiki.shirker.net" target="_blank">Wiki</a></li>
 						</ul>
 					</nav>
 
@@ -114,76 +114,25 @@
 									</li>
 								</ul>--}}
 								<div class="content content0">
-									<div class="left">
+									
+										@foreach($user->workExperiences as $exp)
+										<div class="">
 										<ul>
-											<li>2007 - 2009</li>
+											<li>{{substr($exp->start_date, 0,4)}} - {{$exp->present>0?'Present':substr($exp->end_date, 0,4)}}</li>
 										</ul>
-										<span class="company-name">Inthost.biz web hosting service (owner)</span>
-										<p>Running my own Web-Hosting service along with work as a tech-support for insa-payment terminals back in my home city S-Peterburg, Russia. 
-											I've learnt basic web programming, maintanance and troubleshooting of PCs, servers and webservices, such as mail, web-server, database and so on
-										</p>
-										
-										<ul>
-											<li>2009 - 2017</li>
-										</ul>
-										<span class="company-name">724Care Inc, Cebu Philippines (IT manager, PHP Developer)</span>
-										<p>In 2009 I decided to move over to the Philippines. 
-											Applied as a technician to a call-center in Cebu City, after a while I was promoted to the IT manager position. 
-											It was interesting job and I've gained much of my knowledge from the company founders  
-											whose were skilled and experienced IT experts with strong IT-ingeneering background. 
-											In a few years I became Asterisk (SIP server) expert, database maintainer (MySQL), Network engeneer. 
-											In 2012 the company had high demand for a PHP developer. So as a part-timer I started to work as PHP coder,
-											developing our own dialer (based on GNUDialer), which we sucessfully used for outbound calls. 
-											The core of the dialer was written in C++, which I had to modify in order to work with the new agent's interface, 
-											which I made in Vanilla PHP and jQuery.
-											Another my project was <a href="https://github.com/vldmitrofanov/yp-downloader" target=_blank>PHP YellowPages parser</a> 
-											(Vanilla PHP and Wordpress plugin). As an outbound callcenter we always were in needs of fresh leads. So my parser has come handy. 
-											It could parse and download a few hundred thousands leads a day. Also a back-end, where operator can filter leads by zip-codes, cities or states, 
-											remove duplicates, create order to download selected areas/businesses.
-											All downloading was going through a proxies whose were downloaded and tested automatically. 
-											Thousands lines of PHP code and Bash scripting I wrote made me think about turning into a web developer eventually.
-										</p>
-									</div>
-									<div class="right">
-										<ul>
-											<li>2011 - current time</li>
-										</ul>
-										<span class="company-name">Upwork.com (part-time freelancer)</span>
-										<p>
-											To earn some extra income I started to work on-line on Freelancer.com and Odesk.com 
-											(currently Upwork.com). Currently I don't maintain my Freelancer.com account. Link to my Upwork profile is included in the footer. 
-										</p>
+										<span class="company-name">{{$exp->company_name}}</span>
+										{!! $exp->description !!}
+										</div>
+										@endforeach
 
-										
-										<ul>
-												<li>2017 - current time</li>
+										<div>
+											<h3>Education:</h3>
+											<ul>
+												<li>2004-2006 Saint Petersburg State University <br>(Saint Petersburg, Russia)</li>
 											</ul>
-											<span class="company-name">EmbassyAlliance Travel (web developer)</span>
-											<p class="sm-bt">
-												Working full time as full-stack web developer. Completed several projects using PHP7 (Laravel), VueJS, NodeJS, MySQL, Postgres, Mongo, Redis (for the queues). 
-												Each project includes 3-rd parties oAuth (Google+, Facebook), and online payment processing.
-											</p>
-											<p class="sm-bt">
-												Three major projects I've done with EmbassyAlliance are: 
-											</p>
-											<p class="sm-bt">
-												<a href="https://www.joyscoot.com">JoyScoot</a> scooter rental in Singapore. Part of this project is Web POS, which allows our operators to work 
-												direcly with the databese of the scooters on their Cash Register
-											</p>
-											<p class="sm-bt">	
-												<a href="https://www.attractionsbox.com">Attractions Box</a> online booking for the attractions tickets. Project is still in startup stage, but fully operating. 
-												Currently we cover Singapore only.
-											</p>
-											<p>	
-												<a href="https://www.embassy.camp">Embassy Camps</a> Summer camps for the children based in Malaysia and Singapore.
-											</p>
-										
-												<h3>Education:</h3>
-												<ul>
-													<li>2004-2006 Saint Petersburg State University <br />(Saint Petersburg, Russia)</li>
-												</ul>
-												<p>Distance Education, attended a course "Computer science and computer technology"</p>
-									</div>
+											<p>Distance Education, attended a course "Computer science and computer technology"</p>
+										</div>
+									
 								</div>
 								<footer class="major">
 									{{--<ul class="actions special">
@@ -202,7 +151,10 @@
 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="mailto:shirker2006@gmail.com" class="button primary">Send email</a></li>
-										<li><a href="https://api.whatsapp.com/send?phone=601127113327&text=Hi%20Vladimir,%20" target=_blank class="button">WhatsApp me</a></li>
+										@php 
+										$phone = preg_replace('~\D~', '', $user->phone);
+										@endphp
+										<li><a href="https://api.whatsapp.com/send?phone={{$phone}}&text=Hi%20Vladimir,%20" target=_blank class="button">WhatsApp me</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -225,9 +177,9 @@
 								<dt>Address</dt>
 								<dd>Kuala Lumpur, Malaysia</dd>
 								<dt>Phone</dt>
-								<dd>+60 (11) 2711 3327</dd>
+								<dd>{{$user->phone}}</dd>
 								<dt>Email</dt>
-								<dd><a href="mailto:shirker2006@gmail.com">shirker2006@gmail.com</a></dd>
+								<dd><a href="mailto:{{$user->email}}">{{$user->email}}</a></dd>
 							</dl>
 							<ul class="icons" style="display:flex">
 								<li><a href="https://stackoverflow.com/users/2437063/shirker" target=_blank class="icon brands fab fa-stack-overflow alt"><span class="label">Stack Overflow</span></a></li>
@@ -252,6 +204,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/app.js"></script>
 	</body>
 </html>

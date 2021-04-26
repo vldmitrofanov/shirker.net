@@ -5,7 +5,7 @@
 */
 
 (function($) {
-
+setTimeout(()=>{
 	var	$window = $(window),
 		$body = $('body'),
 		$main = $('#main');
@@ -45,7 +45,7 @@
 					});
 
 			// Links.
-				var $nav_a = $nav.find('a');
+				var $nav_a = $nav.find('a.scrollable');
 
 				$nav_a
 					.scrolly({
@@ -119,5 +119,5 @@
 		$('.scrolly').scrolly({
 			speed: 1000
 		});
-
+	},500);
 })(jQuery);
