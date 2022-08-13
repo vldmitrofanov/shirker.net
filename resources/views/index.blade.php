@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Vladimir Mitrofanov full-stack web developer for hire"/>
 		<meta name="csrf-token" content="{{ csrf_token() }}">
-		<link rel="stylesheet" href="{{asset('assets/css/main.css')}}?v=7345648" />
+		<link rel="stylesheet" href="{{asset('assets/css/main.css')}}?v=7345649" />
 		<noscript><link rel="stylesheet" href="{{asset('assets/css/noscript.css')}}" /></noscript>
 	</head>
 	<body class="is-preload">
