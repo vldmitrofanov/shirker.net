@@ -88,8 +88,9 @@
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>Work Experience & Career History</h2>
-									<p>Started in 2007 my very first scripting was done on FreeBSD 6<br />
-									Running with PHP4 + MySQL 5.0 + Apache 1.3</p>
+									<p>Launched my WebDev career in 2007 <br /> With my very first web application which was built on FreeBSD 6<br />
+									And it was running on PHP4 + MySQL 5.0 + Apache 1.3</p>
+									<p><em>Well, it wasn't Vax server running Algol. I'm still a junior at some point</em></p>
 								</header>
 								{{--<ul class="statistics">
 									<li class="style1">
