@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Vladimir Mitrofanov full-stack web developer for hire"/>
 		<meta name="csrf-token" content="{{ csrf_token() }}">
-		<link rel="stylesheet" href="{{asset('assets/css/main.css')}}" />
+		<link rel="stylesheet" href="{{asset('assets/css/main.css')}}?v=7345648" />
 		<noscript><link rel="stylesheet" href="{{asset('assets/css/noscript.css')}}" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -175,7 +175,7 @@
 							<h2>How to reach me</h2>
 							<dl class="alt">
 								<dt>Address</dt>
-								<dd>Kuala Lumpur, Malaysia</dd>
+								<dd>{{$user->address}}</dd>
 								<dt>Phone</dt>
 								<dd>{{$user->phone}}</dd>
 								<dt>Email</dt>

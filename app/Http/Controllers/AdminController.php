@@ -33,7 +33,7 @@ class AdminController extends Controller
         $user->email = $request->email;
         $user->name = $request->name;
         $user->address = $request->address;
-        $user->phone = $request->email;
+        $user->phone = $request->phone;
         if (!empty($request->password)) {
             $user->password = Hash::make($request->password);
         }
