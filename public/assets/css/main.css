@@ -18895,6 +18895,10 @@ table.alt tbody tr td {
     font-weight: 300;
 }
 
+.content0 p:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
 
 /* Header */
 
