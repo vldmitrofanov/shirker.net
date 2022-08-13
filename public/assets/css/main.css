@@ -18891,7 +18891,7 @@ table.alt tbody tr td {
     font-size: 2em;
 }
 
-p+li {
+.content0 p+ul li {
     font-weight: 300;
 }
 
